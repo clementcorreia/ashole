@@ -1,0 +1,7 @@
+ash_homepage:
+    path:     /
+    defaults: { _controller: ASHAppBundle:Accueil:index }
+
+ash_matchs:
+    path:     /matchs
+    defaults: { _controller: ASHAppBundle:Matchs:index }

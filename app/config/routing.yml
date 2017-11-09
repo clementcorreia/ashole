@@ -1,0 +1,10 @@
+app:
+    resource: "@ASHAppBundle/Resources/config/routing.yml"
+    prefix:   /
+
+ash_user:
+    resource: "@ASHUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+fos_js_routing:
+    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"

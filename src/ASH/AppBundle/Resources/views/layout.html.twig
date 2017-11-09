@@ -36,9 +36,9 @@
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
                             <li {% block activeMatchs %}{% endblock %}><a href="{{ path('ash_matchs') }}">Matchs</a></li>
-                            <li {% block activeCalendrier %}{% endblock %}><a href="">Calendrier</a></li>
-                            <li {% block activeEquipes %}{% endblock %}><a href="">Equipes</a></li>
-                            <li {% block activeClassement %}{% endblock %}><a href="">Classement</a></li>
+                            <li {% block activeCalendrier %}{% endblock %}><a href="{{ path('ash_calendrier') }}">Calendrier</a></li>
+                            <li {% block activeEquipes %}{% endblock %}><a href="{{ path('ash_equipes') }}">Equipes</a></li>
+                            <li {% block activeClassement %}{% endblock %}><a href="{{ path('ash_classement') }}">Classement</a></li>
                         </ul>
                         {% if app.user %}
                         <ul class="nav navbar-nav navbar-right">

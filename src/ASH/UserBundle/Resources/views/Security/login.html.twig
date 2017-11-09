@@ -1,6 +1,12 @@
 {% extends "ASHUserBundle::layout.html.twig" %}
 
-{% block title %}{{ parent() }} - Connexion{% endblock %}
+{% block titleTab %}
+    {{ 'security.login.submit'|trans({}, 'FOSUserBundle') }} - {{ parent() }}
+{% endblock %}
+
+{% block title %}
+    {{ parent() }} - {{ 'security.login.submit'|trans({}, 'FOSUserBundle') }}
+{% endblock %}
 
 {% block content %}
     <div class="container-fluid" id="loginForm">

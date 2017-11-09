@@ -14,7 +14,7 @@
                 <link rel="stylesheet" href="{{ asset_url }}?v=0.0.1"></script>
             {% endstylesheets %}
         {% endblock %} 
-        <title>Accueil - AS Hole Championship</title>
+        <title>{% block titleTab %}AS Hole Championship{% endblock %}</title>
     </head>
     <body>
         {% trans_default_domain 'AppBundle' %}
